@@ -903,3 +903,22 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* =========================================================
+   JAVASCRIPT EFFECTS
+========================================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar.scrolled {
+    background: rgba(7, 11, 20, 0.95);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.25);
+}

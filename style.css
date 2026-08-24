@@ -2484,3 +2484,59 @@ footer {
     }
 
 }
+/* =========================================================
+   WHATSAPP BUTTON
+   ========================================================= */
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    color: #25D366;
+    border-color: rgba(37, 211, 102, 0.45);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* WhatsApp SVG icon */
+
+.whatsapp-button svg {
+    width: 18px;
+    height: 18px;
+    fill: #25D366;
+    flex-shrink: 0;
+
+    transition:
+        fill 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Hover effect */
+
+.whatsapp-button:hover {
+    color: #ffffff;
+    background: #25D366;
+    border-color: #25D366;
+
+    box-shadow:
+        0 8px 25px rgba(37, 211, 102, 0.25);
+
+    transform: translateY(-2px);
+}
+
+
+/* Make icon white when hovering */
+
+.whatsapp-button:hover svg {
+    fill: #ffffff;
+    transform: scale(1.08);
+}
